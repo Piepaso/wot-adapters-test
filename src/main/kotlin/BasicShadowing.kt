@@ -100,7 +100,7 @@ class BasicShadowing(id: String? = "basic-shadowing") : ShadowingFunction(id) {
         propertyEvent?.physicalPropertyId?.let { propertyId ->
             val value = propertyEvent.body
             digitalTwinStateManager.startStateTransaction()
-            digitalTwinStateManager.updateProperty(DigitalTwinStateProperty(propertyId, value))
+            digitalTwinStateManager.updatePropertyValue(DigitalTwinStateProperty(propertyId, value))
             digitalTwinStateManager.commitStateTransaction()
         }
 
