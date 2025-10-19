@@ -3,5 +3,5 @@ plugins {
 }
 rootProject.name = "test-wot-physical-adapter"
 
-includeBuild("../wot-digital-adapter-kotlin")
-includeBuild("../wot-physical-adapter-kotlin")
+includeBuild("../../wot-digital-adapter-kotlin")
+includeBuild("../../wot-physical-adapter-kotlin")
