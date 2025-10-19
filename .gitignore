@@ -1,42 +1,37 @@
-./.gradle
-./build/
-./!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### IntelliJ IDEA ###
-./.idea/*
-*.iws
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
+*.iws
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Kotlin ###
-./.kotlin
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
 
-### Eclipse ###
-./.apt_generated
-./.classpath
-./.factorypath
-./.project
-./.settings
-./.springBeans
-./.sts4-cache
-./bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Logs e file temporanei
+*.log
+*.tmp
+*.swp
+*.bak
+*.class
 
-### NetBeans ###
-./nbproject/private/
-./nbbuild/
-./dist/
-./nbdist/
-./.nb-gradle/
+# File di sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.nfs*
 
-### VS Code ###
-./.vscode/
+# Eclipse / altri IDE
+*.classpath
+*.project
+.settings/
 
-### Mac OS ###
-./.DS_Store
+# Ignora tutto nei sottoprogetti (ognuno con il proprio .idea e build)
+**/.idea/
+**/.gradle/
+**/build/
+**/out/
